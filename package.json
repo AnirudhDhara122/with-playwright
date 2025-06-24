@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npx nyc --reporter=html next dev",
+    "build": "next build",
+    "start": "next start",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.27.6",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "regenerator-runtime": "^0.14.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "20.10.4",
+    "@types/react": "18.2.45",
+    "babel-plugin-istanbul": "^7.0.0",
+    "nyc": "^17.1.0",
+    "playwright-test-coverage": "^1.2.12",
+    "typescript": "5.3.3"
+  }
+}
