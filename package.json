@@ -5,7 +5,7 @@
     "test:dev": "npx nyc --reporter=html next dev",
     "build": "next build",
     "start": "next start",
-    "test:e2e": "node test-with-server.js"
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@babel/runtime": "^7.27.6",
