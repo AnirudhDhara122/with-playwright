@@ -1,4 +1,4 @@
-const isCoverage = process.env.NODE_ENV === "development";
+const isCoverage = process.env.INSTRUMENT === "true";
 
 module.exports = {
   experimental: {
