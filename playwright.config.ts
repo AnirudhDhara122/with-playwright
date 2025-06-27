@@ -22,8 +22,15 @@ export default defineConfig({
   // https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
   webServer: {
     command: "npx nyc --reporter=html next dev",
+    env: {
+      "INSTRUMENT": "true"
+    },
     url: baseURL,
     reuseExistingServer: false,
+    gracefulShutdown: {
+      signal: "SIGINT",
+      timeout: 500
+    }
   },
 
   use: {
